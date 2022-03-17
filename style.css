@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+    font-size: 62.5%;
+    color: #fff;
+    background-color: #ebebeb;
+}
+
+section {
+    max-width: 50rem;
+    margin: 15rem auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.unit-input {
+background-image: linear-gradient(
+  45deg,
+  hsl(226deg 51% 19%) 0%,
+  hsl(226deg 53% 23%) 11%,
+  hsl(225deg 56% 27%) 22%,
+  hsl(225deg 59% 31%) 33%,
+  hsl(224deg 61% 35%) 44%,
+  hsl(225deg 63% 40%) 56%,
+  hsl(224deg 66% 44%) 67%,
+  hsl(224deg 69% 47%) 78%,
+  hsl(224deg 71% 52%) 89%,
+  hsl(223deg 73% 56%) 100%
+);
+}
+
+.metrics {
+    background-color: #1F2937;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 3;
+    padding-top: 4rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 2;
+}
+
+p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2;
+    color: #D2D2D2;
+    text-align: center;
+}
+
+
+.metric {
+    text-align: center;
+    padding: 2rem;
+}
+
+input {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    background: none;
+    font-size: 9rem;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 20rem;
+    color: #fff;
+    font-weight: 800;
+    font-family: inherit;
+    padding: 5rem 0;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0;
+  -moz-appearance:textfield;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #fff;
+    opacity: 0.4;
+}
+
+@media (max-width:45rem) {
+    section {
+        margin: 5rem auto;
+        padding: 0 2rem;
+    }
+
+    input {
+        padding: 3rem 0;
+    }
+}
